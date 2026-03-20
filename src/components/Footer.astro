@@ -1,0 +1,69 @@
+---
+import { BrainCircuit, Twitter, Linkedin, Github } from 'lucide-react';
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-[#0F172A] border-t border-white/10 pt-16 pb-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-12">
+      
+      {/* Brand Col */}
+      <div class="col-span-1 md:col-span-2 space-y-6">
+        <a href="/" class="flex items-center gap-2 group inline-block">
+          <BrainCircuit class="h-8 w-8 text-[#38BDF8]" />
+          <span class="font-heading font-bold text-xl tracking-tight">
+            Neurolytix <span class="text-[#38BDF8]">AI</span>
+          </span>
+        </a>
+        <p class="text-gray-400 max-w-md text-sm leading-relaxed">
+          Engineering intelligence and delivering innovation. We build scalable, high-performance web, app, and custom AI software solutions tailored for visionary businesses.
+        </p>
+        <div class="flex gap-4">
+          <a href="#" class="text-gray-400 hover:text-[#38BDF8] transition-colors" aria-label="Twitter">
+            <Twitter class="h-5 w-5" />
+          </a>
+          <a href="#" class="text-gray-400 hover:text-[#38BDF8] transition-colors" aria-label="LinkedIn">
+            <Linkedin class="h-5 w-5" />
+          </a>
+          <a href="#" class="text-gray-400 hover:text-[#38BDF8] transition-colors" aria-label="GitHub">
+            <Github class="h-5 w-5" />
+          </a>
+        </div>
+      </div>
+
+      {/* Quick Links */}
+      <div>
+        <h4 class="font-heading font-bold text-white mb-6">Services</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#services" class="text-gray-400 hover:text-[#38BDF8] transition-colors">Web Development</a></li>
+          <li><a href="#services" class="text-gray-400 hover:text-[#38BDF8] transition-colors">App Development</a></li>
+          <li><a href="#services" class="text-gray-400 hover:text-[#38BDF8] transition-colors">Custom Software</a></li>
+          <li><a href="#services" class="text-gray-400 hover:text-[#38BDF8] transition-colors">AI Solutions</a></li>
+        </ul>
+      </div>
+
+      {/* Company */}
+      <div>
+        <h4 class="font-heading font-bold text-white mb-6">Company</h4>
+        <ul class="space-y-3 text-sm">
+          <li><a href="#tech-stack" class="text-gray-400 hover:text-[#38BDF8] transition-colors">Our Stack</a></li>
+          <li><a href="#contact" class="text-gray-400 hover:text-[#38BDF8] transition-colors">Contact</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-[#38BDF8] transition-colors">Privacy Policy</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-[#38BDF8] transition-colors">Terms of Service</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-gray-500 text-sm text-center md:text-left">
+        &copy; {currentYear} Built by Neurolytix AI. All rights reserved.
+      </p>
+      <div class="flex items-center gap-2 text-sm text-gray-500">
+        <span>Designed with</span>
+        <span class="text-[#818CF8]">♥</span>
+        <span>for scale.</span>
+      </div>
+    </div>
+  </div>
+</footer>

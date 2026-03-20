@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@source "../components/**/*.jsx";
+@source "../components/**/*.astro";
+@source "../layouts/**/*.astro";
+@source "../pages/**/*.astro";
+
+@theme {
+  --color-deep-tech: #0F172A;
+  --color-accent-cyan: #38BDF8;
+  --color-accent-purple: #818CF8;
+  --color-off-white: #F8FAFC;
+  
+  --font-heading: "Inter", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-[#0F172A] text-off-white font-body selection:bg-accent-cyan/30 selection:text-white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-heading tracking-tight;
+}
+
+.glass {
+  @apply bg-white/5 backdrop-blur-md border border-white/10 shadow-xl;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-accent-cyan to-accent-purple;
+}
+
+.bg-mesh {
+  background-color: #0F172A;
+  background-image: 
+    radial-gradient(at 40% 20%, hsla(197, 93%, 60%, 0.15) 0px, transparent 50%),
+    radial-gradient(at 80% 0%, hsla(234, 89%, 74%, 0.15) 0px, transparent 50%),
+    radial-gradient(at 0% 50%, hsla(197, 93%, 60%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 80% 50%, hsla(234, 89%, 74%, 0.1) 0px, transparent 50%),
+    radial-gradient(at 0% 100%, hsla(197, 93%, 60%, 0.05) 0px, transparent 50%),
+    radial-gradient(at 80% 100%, hsla(234, 89%, 74%, 0.15) 0px, transparent 50%),
+    radial-gradient(at 0% 0%, hsla(197, 93%, 60%, 0.1) 0px, transparent 50%);
+}
+
+@keyframes ticker {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-ticker {
+  animation: ticker 30s linear infinite;
+}

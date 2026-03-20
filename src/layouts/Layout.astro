@@ -1,0 +1,33 @@
+---
+import '../styles/global.css';
+import { Navbar } from '../components/Navbar.jsx';
+import Footer from '../components/Footer.astro';
+import '@fontsource/inter/700.css';
+import '@fontsource/plus-jakarta-sans/400.css';
+
+interface Props {
+	title: string;
+	description?: string;
+}
+
+const { title, description = "Neurolytix AI Solutions provides cutting-edge Web, App, and Custom AI software development tailored to your business needs." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content={description} />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-[#0F172A] text-[#F8FAFC] antialiased min-h-screen flex flex-col">
+		<Navbar client:load />
+		<main class="flex-grow">
+			<slot />
+		</main>
+		<Footer />
+	</body>
+</html>
