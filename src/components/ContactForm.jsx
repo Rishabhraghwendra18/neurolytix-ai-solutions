@@ -35,6 +35,16 @@ export const ContactForm = () => {
               </div>
 
               <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                  <Phone className="w-6 h-6 text-[#38BDF8]" />
+                </div>
+                <div>
+                  <h4 className="text-white font-semibold font-heading mb-1">Phone</h4>
+                  <p className="text-gray-400">+91 9990777682</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-6 h-6 text-[#38BDF8]" />
                 </div>
