@@ -1,0 +1,188 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { ChevronLeft, ShieldCheck } from "lucide-react";
+---
+
+<Layout title="Privacy Policy | Neurolytix AI Solutions" noindex={true}>
+  <div
+    class="relative min-h-screen bg-[#0F172A] text-[#F8FAFC] py-16 px-6 sm:px-8 lg:px-12 selection:bg-[#38BDF8]/30 overflow-hidden font-jakarta"
+  >
+    {/* Decorative background glow */}
+    <div
+      class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-96 bg-[#38BDF8]/10 blur-[120px] rounded-full pointer-events-none -z-10"
+    >
+    </div>
+
+    <div class="max-w-4xl mx-auto">
+      {/* Navigation */}
+      <div class="mb-12">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 text-[#38BDF8] hover:text-[#818CF8] transition-colors group font-inter font-medium"
+        >
+          <ChevronLeft
+            className="w-5 h-5 group-hover:-translate-x-1 transition-transform drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]"
+          />
+          <span>Back to Home</span>
+        </a>
+      </div>
+
+      {/* Header */}
+      <div class="mb-12 border-b border-white/10 pb-8 relative">
+        <div class="flex items-center gap-4 mb-6">
+          <div
+            class="p-3 bg-white/[0.03] backdrop-blur-md border border-white/10 rounded-xl relative overflow-hidden group"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-[#38BDF8]/20 to-[#818CF8]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            >
+            </div>
+            <ShieldCheck
+              className="w-8 h-8 text-[#38BDF8] drop-shadow-[0_0_10px_rgba(56,189,248,0.5)] relative z-10"
+            />
+          </div>
+          <div>
+            <h1
+              class="text-4xl md:text-5xl font-inter font-bold text-white tracking-tight drop-shadow-[0_0_15px_rgba(56,189,248,0.3)]"
+            >
+              Privacy Policy
+            </h1>
+            <p
+              class="text-[#38BDF8] font-inter font-medium mt-2 flex items-center gap-2"
+            >
+              <span class="w-2 h-2 rounded-full bg-[#38BDF8] animate-pulse"
+              ></span>
+              Verified Secure & Privacy First
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Content */}
+      <div
+        class="bg-white/[0.03] backdrop-blur-md border border-white/10 rounded-2xl p-8 md:p-12 shadow-2xl relative z-10"
+      >
+        <div
+          class="prose prose-invert prose-cyan max-w-none font-jakarta [&>h2]:font-inter [&>h2]:font-bold [&>h3]:font-inter [&>h3]:font-semibold prose-p:leading-relaxed prose-li:leading-relaxed prose-p:text-gray-300 prose-li:text-gray-300"
+        >
+          <h2>Introduction</h2>
+          <p>
+            At Neurolytix AI Solutions, we respect your privacy and are
+            committed to protecting it through our compliance with this policy.
+            This Privacy Policy outlines the types of data we collect, including
+            Personal and Project-related information, and how we utilize,
+            safeguard, and disclose that data.
+          </p>
+
+          <h2>Information We Collect</h2>
+          <ul>
+            <li>
+              <strong>Contact Details:</strong> Name, Email address, Phone number,
+              and related contact details.
+            </li>
+            <li>
+              <strong>Project Information:</strong> Requirements, technical documentation,
+              specifications, and data necessary for the execution of our services.
+            </li>
+            <li>
+              <strong>Log Data:</strong> IP addresses, browser type, operating system,
+              and standard web analytics collected automatically as you navigate through
+              our site.
+            </li>
+          </ul>
+
+          <h2>How We Use Your Information</h2>
+          <p>
+            We use information that we collect about you or that you provide to
+            us to:
+          </p>
+          <ul>
+            <li>Provide our services and customized software solutions.</li>
+            <li>Process payments and securely manage your transactions.</li>
+            <li>
+              Communicate project updates, respond to your comments, questions,
+              and requests.
+            </li>
+            <li>
+              Improve and refine our AI algorithms and software architectures
+              based on usage patterns.
+            </li>
+          </ul>
+
+          <h2>AI Data Handling</h2>
+          <p>
+            Client data utilized for custom AI model integration and processing
+            is kept strictly confidential. <strong
+              >We do not use your proprietary or client-specific data to train
+              public or third-party AI models without explicit consent.</strong
+            > Your intellectual property remains yours, and our handling of data adheres
+            to strict confidentiality agreements.
+          </p>
+
+          <h2>Data Security</h2>
+          <p>
+            We implement industry-standard encryption protocols and secure
+            hosting practices to maintain the safety of your personal and
+            project information. Our infrastructure utilizes secure third-party
+            providers such as AWS, Vercel, and Netlify to ensure high
+            availability, end-to-end encryption, and a robust security posture
+            against unauthorized access.
+          </p>
+
+          <h2>Cookies</h2>
+          <p>
+            We use cookies and similar tracking technologies to track the
+            activity on our service and hold certain information. Cookies are
+            files with small amounts of data which may include an anonymous
+            unique identifier. You can instruct your browser to refuse all
+            cookies or to indicate when a cookie is being sent to enhance your
+            user experience according to your preferences.
+          </p>
+
+          <h2>Third-Party Disclosure</h2>
+          <p>
+            <strong
+              >We do not sell, trade, or otherwise transfer your personally
+              identifiable information to outside parties.</strong
+            > This does not include trusted third parties who assist us in operating
+            our website, conducting our business, or servicing you, so long as those
+            parties agree to keep this information confidential.
+          </p>
+
+          <h2>Your Rights</h2>
+          <p>
+            Depending on your location, you may have the following rights
+            regarding your personal data:
+          </p>
+          <ul>
+            <li>
+              The right to access, update, or delete the personal information we
+              have on you.
+            </li>
+            <li>
+              The right of rectification to have your information corrected if
+              it is inaccurate or incomplete.
+            </li>
+            <li>
+              The right to withdraw consent at any time where we relied on your
+              explicit consent to process your personal information.
+            </li>
+          </ul>
+
+          <h2>Contact Us</h2>
+          <p>
+            If you have any questions about this Privacy Policy, the practices
+            of this site, or your dealings with our services, please contact us
+            at:
+            <br />
+            <a
+              href="mailto:rishabhraghwendra2002@gmail.com"
+              class="text-[#38BDF8] hover:text-[#818CF8] transition-colors inline-block mt-2 font-medium"
+              >rishabhraghwendra2002@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

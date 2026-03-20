@@ -8,9 +8,10 @@ import '@fontsource/plus-jakarta-sans/400.css';
 interface Props {
 	title: string;
 	description?: string;
+	noindex?: boolean;
 }
 
-const { title, description = "Neurolytix AI Solutions provides cutting-edge Web, App, and Custom AI software development tailored to your business needs." } = Astro.props;
+const { title, description = "Neurolytix AI Solutions provides cutting-edge Web, App, and Custom AI software development tailored to your business needs.", noindex = false } = Astro.props;
 ---
 
 <!doctype html>
@@ -19,6 +20,7 @@ const { title, description = "Neurolytix AI Solutions provides cutting-edge Web,
 		<meta charset="UTF-8" />
 		<meta name="description" content={description} />
 		<meta name="viewport" content="width=device-width" />
+		{noindex && <meta name="robots" content="noindex, nofollow" />}
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
