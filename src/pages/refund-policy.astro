@@ -1,0 +1,163 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { ArrowLeft, CheckCircle2 } from "lucide-react";
+
+const lastUpdated = "March 20, 2026";
+---
+
+<Layout title="Refund Policy | Neurolytix AI Solutions">
+  <div
+    class="relative min-h-screen bg-[#0F172A] text-[#F8FAFC] py-16 px-6 sm:px-8 lg:px-12 selection:bg-[#38BDF8]/30 overflow-hidden font-jakarta"
+  >
+    {/* Decorative background glow */}
+    <div
+      class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-96 bg-[#38BDF8]/10 blur-[120px] rounded-full pointer-events-none -z-10"
+    >
+    </div>
+
+    <div class="max-w-[800px] mx-auto">
+      {/* Navigation */}
+      <div class="mb-12">
+        <a
+          href="/"
+          class="inline-flex items-center gap-2 text-[#38BDF8] hover:text-[#818CF8] transition-colors group font-inter font-medium"
+        >
+          <ArrowLeft
+            class="w-5 h-5 group-hover:-translate-x-1 transition-transform drop-shadow-[0_0_8px_rgba(56,189,248,0.5)]"
+          />
+          <span>Back to Home</span>
+        </a>
+      </div>
+
+      {/* Hero Header */}
+      <div class="text-center mb-16 relative">
+        <h1
+          class="text-4xl md:text-5xl font-inter font-bold text-white mb-6 tracking-tight drop-shadow-[0_0_15px_rgba(56,189,248,0.3)]"
+        >
+          Refund Policy
+        </h1>
+        <div
+          class="w-24 h-1 bg-gradient-to-r from-[#38BDF8] to-[#818CF8] mx-auto rounded-full mb-6 shadow-[0_0_10px_rgba(56,189,248,0.6)]"
+        >
+        </div>
+        <p class="text-gray-400 leading-relaxed text-sm md:text-base">
+          Last Updated: <span class="text-gray-300 font-medium"
+            >{lastUpdated}</span
+          >
+        </p>
+      </div>
+
+      {/* Content Card (Glassmorphic) */}
+      <div
+        class="bg-white/[0.03] backdrop-blur-md border border-white/10 rounded-2xl p-8 md:p-12 shadow-2xl hover:shadow-[0_0_30px_rgba(56,189,248,0.15)] hover:-translate-y-1 hover:border-white/20 transition-all duration-300 relative z-10 group"
+      >
+        {/* Intro */}
+        <p class="text-gray-300 leading-relaxed mb-10 text-lg">
+          At Neurolytix AI Solutions, we provide customized IT services
+          including website development, mobile app development, and software
+          solutions. Due to the nature of our services, refunds are subject to
+          the following conditions:
+        </p>
+
+        {/* Core Policy Points */}
+        <div class="space-y-8">
+          {/* Point 1 */}
+          <div
+            class="flex gap-4 items-start group/point hover:bg-white/[0.01] p-2 -m-2 rounded-xl transition-colors"
+          >
+            <div class="mt-1 flex-shrink-0">
+              <CheckCircle2
+                class="w-6 h-6 text-[#38BDF8] drop-shadow-[0_0_8px_rgba(56,189,248,0.5)] group-hover/point:text-[#818CF8] transition-colors"
+              />
+            </div>
+            <div>
+              <h3 class="text-xl font-inter font-semibold text-white mb-2">
+                Work Commencement
+              </h3>
+              <p class="text-gray-400 leading-relaxed">
+                Once a project has been initiated and work has commenced, no
+                refunds will be provided.
+              </p>
+            </div>
+          </div>
+
+          {/* Point 2 */}
+          <div
+            class="flex gap-4 items-start group/point hover:bg-white/[0.01] p-2 -m-2 rounded-xl transition-colors"
+          >
+            <div class="mt-1 flex-shrink-0">
+              <CheckCircle2
+                class="w-6 h-6 text-[#38BDF8] drop-shadow-[0_0_8px_rgba(56,189,248,0.5)] group-hover/point:text-[#818CF8] transition-colors"
+              />
+            </div>
+            <div>
+              <h3 class="text-xl font-inter font-semibold text-white mb-2">
+                Pre-Project Cancellation
+              </h3>
+              <p class="text-gray-400 leading-relaxed">
+                If a cancellation request is made before the start of the
+                project, a partial refund may be considered after deducting any
+                applicable administrative or consultation charges.
+              </p>
+            </div>
+          </div>
+
+          {/* Point 3 */}
+          <div
+            class="flex gap-4 items-start group/point hover:bg-white/[0.01] p-2 -m-2 rounded-xl transition-colors"
+          >
+            <div class="mt-1 flex-shrink-0">
+              <CheckCircle2
+                class="w-6 h-6 text-[#38BDF8] drop-shadow-[0_0_8px_rgba(56,189,248,0.5)] group-hover/point:text-[#818CF8] transition-colors"
+              />
+            </div>
+            <div>
+              <h3 class="text-xl font-inter font-semibold text-white mb-2">
+                Milestone Delivery
+              </h3>
+              <p class="text-gray-400 leading-relaxed">
+                No refunds will be issued for completed milestones or delivered
+                work.
+              </p>
+            </div>
+          </div>
+
+          {/* Point 4 */}
+          <div
+            class="flex gap-4 items-start group/point hover:bg-white/[0.01] p-2 -m-2 rounded-xl transition-colors"
+          >
+            <div class="mt-1 flex-shrink-0">
+              <CheckCircle2
+                class="w-6 h-6 text-[#38BDF8] drop-shadow-[0_0_8px_rgba(56,189,248,0.5)] group-hover/point:text-[#818CF8] transition-colors"
+              />
+            </div>
+            <div>
+              <h3 class="text-xl font-inter font-semibold text-white mb-2">
+                Resolution via Revisions
+              </h3>
+              <p class="text-gray-400 leading-relaxed">
+                Any issues or concerns regarding the service will be addressed
+                through revisions as per the agreed project scope.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Contact Footer */}
+        <div class="mt-12 pt-8 border-t border-white/10 text-center">
+          <p
+            class="text-gray-400 mb-6 font-medium tracking-wide text-sm uppercase"
+          >
+            For any refund-related queries, please contact us at:
+          </p>
+          <a
+            href="mailto:rishabhraghwendra2002@gmail.com"
+            class="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-[#38BDF8]/10 text-[#38BDF8] font-inter font-semibold hover:bg-[#38BDF8] hover:text-[#0F172A] transition-all duration-300 ring-1 ring-[#38BDF8]/50 hover:ring-[#38BDF8] hover:shadow-[0_0_25px_rgba(56,189,248,0.5)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[#0F172A] focus:ring-[#38BDF8]"
+          >
+            rishabhraghwendra2002@gmail.com
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>

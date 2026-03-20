@@ -105,9 +105,10 @@ export const ContactForm = () => {
                   <select
                     id="service"
                     name="service"
+                    defaultValue=""
                     className="w-full bg-[#0F172A]/50 border border-gray-700 text-white rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent transition-all appearance-none cursor-pointer"
                   >
-                    <option value="" disabled selected>Select a service</option>
+                    <option value="" disabled>Select a service</option>
                     <option value="web">Web Development</option>
                     <option value="app">App Development</option>
                     <option value="custom">Custom Software</option>
