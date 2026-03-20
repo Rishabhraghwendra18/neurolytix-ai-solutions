@@ -5,9 +5,9 @@ export const ContactForm = () => {
   return (
     <section id="contact" className="py-24 bg-[#0F172A] relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
-          
+
           {/* Left Column: Contact Info */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -30,17 +30,17 @@ export const ContactForm = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold font-heading mb-1">Email Us</h4>
-                  <p className="text-gray-400">contact@neurolytix.ai</p>
+                  <p className="text-gray-400">rishabhraghwendra2002@gmail.com</p>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-4">
                 <div className="w-12 h-12 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0">
                   <MapPin className="w-6 h-6 text-[#38BDF8]" />
                 </div>
                 <div>
                   <h4 className="text-white font-semibold font-heading mb-1">Office Location</h4>
-                  <p className="text-gray-400">101 Innovation Drive<br />Tech District, CA 94103</p>
+                  <p className="text-gray-400">A/156 St. No 6<br />Vikas Vihar, New Delhi-59</p>
                 </div>
               </div>
             </div>
@@ -55,7 +55,7 @@ export const ContactForm = () => {
             className="glass rounded-3xl p-8 md:p-10 border border-white/10 shadow-2xl relative"
           >
             {/* Soft backdrop glow behind form */}
-             <div className="absolute -inset-1 bg-gradient-to-r from-[#38BDF8] to-[#818CF8] rounded-[2rem] blur-xl opacity-20 pointer-events-none"></div>
+            <div className="absolute -inset-1 bg-gradient-to-r from-[#38BDF8] to-[#818CF8] rounded-[2rem] blur-xl opacity-20 pointer-events-none"></div>
 
             <form
               name="contact"
