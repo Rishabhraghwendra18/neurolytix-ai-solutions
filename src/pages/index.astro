@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import { Hero } from '../components/Hero.jsx';
 import { Services } from '../components/Services.jsx';
 import { TechStack } from '../components/TechStack.jsx';
+import Testimonials from '../components/Testimonials.astro';
 import { ContactForm } from '../components/ContactForm.jsx';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -13,5 +14,6 @@ import { ContactForm } from '../components/ContactForm.jsx';
 	<Hero client:load />
 	<Services client:load />
 	<TechStack client:load />
+	<Testimonials />
 	<ContactForm client:visible />
 </Layout>

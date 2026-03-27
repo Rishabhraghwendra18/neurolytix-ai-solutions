@@ -1,0 +1,326 @@
+---
+const testimonials = [
+  {
+    text: "Neurolytix seamlessly integrated predictive AI into our core systems. Their solution scaled our operations tenfold and automated workflows we thought were impossible to optimize.",
+    name: "Alex Chen",
+    title: "CTO, FinTech ScaleUp",
+  },
+  {
+    text: "The delivery of our custom enterprise web application was flawless. Their speed, modern architecture, and attention to detail gave us a significant competitive advantage.",
+    name: "Sarah Jenkins",
+    title: "VP of Engineering, Global Logistics",
+  },
+  {
+    text: "We had a complex, custom logic problem that generic software couldn't handle. Neurolytix engineered a brilliant solution that completely transformed our data pipeline.",
+    name: "Michael Chang",
+    title: "Director of Operations, HealthTech",
+  },
+  {
+    text: "Working with Neurolytix was a game-changer. Their professional execution resulted in massive ROI while ensuring top-tier data security and compliance across the board.",
+    name: "Elena Rodriguez",
+    title: "CEO, Data Driven Media",
+  },
+];
+---
+
+<section
+  class="relative py-24 bg-deep-tech overflow-hidden pb-20"
+  id="testimonials"
+>
+  {/* Faint Soft Indigo radial glow */}
+  <div
+    class="absolute inset-0 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-accent-purple/10 via-transparent to-transparent pointer-events-none"
+  >
+  </div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 relative z-10">
+      <p
+        class="text-off-white font-plus-jakarta-sans mb-3 text-sm tracking-widest uppercase"
+      >
+        <span class="text-accent-cyan font-bold"
+          >Trusted by visionary enterprises</span
+        > to scale intelligence
+      </p>
+      <h2 class="text-4xl md:text-5xl font-inter font-bold text-off-white">
+        Client Success Stories
+      </h2>
+    </div>
+
+    <div
+      class="relative w-full overflow-hidden group/carousel z-10"
+      id="testimonial-carousel"
+    >
+      {/* Testimonial Track */}
+      <div
+        class="flex transition-transform duration-500 ease-in-out pt-1"
+        id="testimonial-track"
+      >
+        {
+          testimonials.map((t) => (
+            <div class="w-full sm:w-1/2 lg:w-1/3 shrink-0 px-4 pb-8 testimonial-slide">
+              <div class="relative h-full p-8 bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl hover:border-accent-cyan/50 hover:-translate-y-1 transition-all duration-300 flex flex-col group/card cursor-pointer">
+                {/* Faint Quote SVG */}
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="48"
+                  height="48"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="absolute top-6 right-6 text-accent-purple opacity-10 transition-opacity group-hover/card:opacity-20"
+                >
+                  <>
+                    <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z" />
+                    <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z" />
+                  </>
+                </svg>
+
+                <div class="flex gap-1 mb-6">
+                  {/* 5 Cyan Stars */}
+                  {[...Array(5)].map(() => (
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="text-accent-cyan"
+                    >
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg>
+                  ))}
+                </div>
+
+                <p class="font-plus-jakarta-sans text-white/80 leading-relaxed mb-8 grow">
+                  "{t.text}"
+                </p>
+
+                <div class="mt-auto pt-4 border-t border-white/5">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span class="font-inter font-bold text-off-white">
+                      {t.name}
+                    </span>
+                    {/* Verified Client Badge */}
+                    <div class="relative flex items-center group/badge">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="text-accent-cyan cursor-help"
+                      >
+                        <>
+                          <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" />
+                          <path d="m9 12 2 2 4-4" />
+                        </>
+                      </svg>
+                      <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-2 py-1 bg-deep-tech border border-white/10 text-xs text-white/80 rounded opacity-0 group-hover/badge:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+                        Verified Client
+                      </div>
+                    </div>
+                  </div>
+                  <span class="font-plus-jakarta-sans text-xs text-accent-purple block">
+                    {t.title}
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+
+      {/* Prev/Next Buttons */}
+      <div class="flex justify-center mt-4 gap-4">
+        <button
+          id="prev-testimonial"
+          class="p-3 rounded-full bg-white/5 border border-white/10 text-white/80 hover:bg-accent-cyan/10 hover:text-accent-cyan hover:border-accent-cyan/30 transition-all focus:outline-none focus:ring-2 focus:ring-accent-cyan"
+          aria-label="Previous testimonials"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"><path d="m15 18-6-6 6-6"></path></svg
+          >
+        </button>
+        <button
+          id="next-testimonial"
+          class="p-3 rounded-full bg-white/5 border border-white/10 text-white/80 hover:bg-accent-cyan/10 hover:text-accent-cyan hover:border-accent-cyan/30 transition-all focus:outline-none focus:ring-2 focus:ring-accent-cyan"
+          aria-label="Next testimonials"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"><path d="m9 18 6-6-6-6"></path></svg
+          >
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  let initCarousel = () => {
+    const track = document.getElementById("testimonial-track");
+    const prevBtn = document.getElementById("prev-testimonial");
+    const nextBtn = document.getElementById("next-testimonial");
+    const slides = document.querySelectorAll(".testimonial-slide");
+
+    if (!track || slides.length === 0) return;
+
+    let currentIndex = 0;
+    const totalSlides = slides.length;
+    let autoPlayInterval = null;
+    let startX = 0;
+    let isDragging = false;
+
+    function getVisibleCards() {
+      if (window.innerWidth >= 1024) return 3; // lg
+      if (window.innerWidth >= 640) return 2; // sm
+      return 1;
+    }
+
+    function getMaxIndex() {
+      return Math.max(0, totalSlides - getVisibleCards());
+    }
+
+    function updateCarousel() {
+      if (!track) return;
+      const visibleCards = getVisibleCards();
+      const maxIndex = getMaxIndex();
+
+      if (currentIndex > maxIndex) {
+        currentIndex = maxIndex;
+      }
+
+      // translateX calculation to shift entire rows properly
+      track.style.transform = `translateX(calc(-100% * ${currentIndex} / ${visibleCards}))`;
+    }
+
+    function nextSlide() {
+      const maxIndex = getMaxIndex();
+      if (currentIndex < maxIndex) {
+        currentIndex++;
+      } else {
+        currentIndex = 0; // wrap around
+      }
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      const maxIndex = getMaxIndex();
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = maxIndex; // wrap around backwards
+      }
+      updateCarousel();
+    }
+
+    function startAutoPlay() {
+      stopAutoPlay();
+      // @ts-ignore
+      autoPlayInterval = window.setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoPlay() {
+      if (autoPlayInterval) {
+        window.clearInterval(autoPlayInterval);
+      }
+    }
+
+    if (nextBtn) {
+      nextBtn.addEventListener("click", () => {
+        nextSlide();
+        startAutoPlay();
+      });
+    }
+
+    if (prevBtn) {
+      prevBtn.addEventListener("click", () => {
+        prevSlide();
+        startAutoPlay();
+      });
+    }
+
+    // Touch support for swiping
+    track.addEventListener(
+      "touchstart",
+      (e) => {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+        stopAutoPlay();
+      },
+      { passive: true },
+    );
+
+    track.addEventListener(
+      "touchmove",
+      (e) => {
+        if (!isDragging) return;
+      },
+      { passive: true },
+    );
+
+    track.addEventListener("touchend", (e) => {
+      if (!isDragging) return;
+      isDragging = false;
+      const endX = e.changedTouches[0].clientX;
+      const diff = startX - endX;
+
+      if (Math.abs(diff) > 50) {
+        // minimum swipe distance
+        if (diff > 0) {
+          nextSlide();
+        } else {
+          prevSlide();
+        }
+      }
+      startAutoPlay();
+    });
+
+    // Pause on hover over the carousel
+    const carouselContainer = document.getElementById("testimonial-carousel");
+    if (carouselContainer) {
+      carouselContainer.addEventListener("mouseenter", stopAutoPlay);
+      carouselContainer.addEventListener("mouseleave", startAutoPlay);
+    }
+
+    window.addEventListener("resize", () => {
+      updateCarousel();
+    });
+
+    updateCarousel();
+    startAutoPlay();
+  };
+
+  // Run on first load
+  initCarousel();
+
+  // Run on view transitions (if Astro View Transitions are used)
+  document.addEventListener("astro:page-load", initCarousel);
+</script>

@@ -30,7 +30,7 @@ export const ContactForm = () => {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold font-heading mb-1">Email Us</h4>
-                  <p className="text-gray-400">rishabhraghwendra2002@gmail.com</p>
+                  <p className="text-gray-400">info@neurolytixai.com</p>
                 </div>
               </div>
 
