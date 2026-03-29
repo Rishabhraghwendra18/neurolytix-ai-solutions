@@ -1,0 +1,260 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Checkout | Neurolytix AI Solutions">
+  <div class="relative min-h-[calc(100vh-80px)] py-20 overflow-hidden">
+    <!-- Background Elements -->
+    <div class="absolute inset-0 z-0 pointer-events-none">
+      <div
+        class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[#818CF8]/10 blur-[120px] rounded-full"
+      >
+      </div>
+      <div
+        class="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-[#38BDF8]/10 blur-[120px] rounded-full"
+      >
+      </div>
+    </div>
+
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 max-w-6xl">
+      <div class="mb-12">
+        <h1 class="text-4xl md:text-5xl font-inter font-bold text-white mb-4">
+          Secure Checkout
+        </h1>
+        <p class="text-white/60 text-lg max-w-2xl">
+          Complete your details to block your slot. No payment required right
+          now.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16">
+        <!-- Left Column: Form -->
+        <div class="lg:col-span-7">
+          <div
+            class="bg-white/5 border border-white/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm"
+          >
+            <h2
+              class="text-2xl font-inter font-bold text-white mb-8 border-b border-white/10 pb-4"
+            >
+              Complete Your Booking
+            </h2>
+
+            <form id="checkout-form" class="space-y-6">
+              <div class="space-y-1">
+                <label
+                  for="fullName"
+                  class="block text-sm font-medium text-white/80"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  required
+                  class="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent transition-all"
+                  placeholder="John Doe"
+                />
+              </div>
+
+              <div class="space-y-1">
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-white/80"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full bg-white/5 border border-white/10 rounded-lg p-3 text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent transition-all"
+                  placeholder="john@example.com"
+                />
+              </div>
+
+              <div class="space-y-1">
+                <label
+                  for="phone"
+                  class="block text-sm font-medium text-white/80"
+                >
+                  Phone Number <span class="text-xs text-white/50 ml-1"
+                    >(+91 / India format)</span
+                  >
+                </label>
+                <div class="relative">
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    pattern="[0-9]{10}"
+                    title="Please enter a valid 10-digit mobile number"
+                    class="w-full bg-white/5 border border-white/10 rounded-lg p-3 pl-[52px] text-white placeholder-white/40 focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:border-transparent transition-all"
+                    placeholder="Country Code + Phone No"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Right Column: Order Summary -->
+        <div class="lg:col-span-5">
+          <div
+            class="bg-gradient-to-b from-white/[0.08] to-white/0 border border-white/10 rounded-2xl p-6 lg:p-8 backdrop-blur-sm self-start sticky top-28"
+          >
+            <h2
+              class="text-xl font-inter font-bold text-white mb-6 border-b border-white/10 pb-4"
+            >
+              Order Summary
+            </h2>
+
+            <div class="space-y-4 mb-6">
+              <div class="flex justify-between items-center text-white/80">
+                <span id="service-name" class="font-medium text-white"
+                  >Consultation Service</span
+                >
+                <span id="service-price" class="font-medium text-[#38BDF8]"
+                  >Price on Request</span
+                >
+              </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-4 mb-6">
+              <div
+                class="flex justify-between items-center text-lg font-bold mb-2"
+              >
+                <span class="text-white">Amount due today</span>
+                <span class="text-emerald-400">₹0</span>
+              </div>
+              <div class="flex justify-between items-center">
+                <span class="text-sm text-white/60"
+                  >Total to be paid (18% GST Inclusive)</span
+                >
+                <span id="total-price" class="text-lg font-bold text-white"
+                  >Price on Request</span
+                >
+              </div>
+            </div>
+
+            <div
+              class="flex items-start gap-3 bg-[#0F172A]/80 rounded-lg p-4 mb-8 border border-white/5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-6 w-6 text-[#38BDF8] shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                ></path>
+              </svg>
+              <p class="text-sm text-white/70 leading-relaxed">
+                Secure, No-Obligation Booking. Payment will be processed in the
+                next step.
+              </p>
+            </div>
+
+            <button
+              type="submit"
+              form="checkout-form"
+              class="w-full bg-gradient-to-r from-[#38BDF8] to-[#818CF8] text-white font-inter font-bold py-4 px-6 rounded-lg hover:scale-[1.02] transition-transform duration-300 flex items-center justify-center gap-2 group shadow-[0_0_20px_rgba(56,189,248,0.3)] hover:shadow-[0_0_30px_rgba(56,189,248,0.5)]"
+            >
+              <span>Proceed to Checkout</span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </button>
+            <!-- <p class="text-center text-xs text-white/40 mt-4 flex items-center justify-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+              </svg>
+              Information is encrypted and secure
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    initCheckout();
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    initCheckout();
+  });
+
+  function initCheckout() {
+    // Basic guard to prevent duplicate bindings if called multiple times via ViewTransitions
+    if ((window as any)._checkoutInitialized) return;
+
+    const params = new URLSearchParams(window.location.search);
+    const plan = params.get("plan");
+
+    const serviceNameEl = document.getElementById("service-name");
+    const servicePriceEl = document.getElementById("service-price");
+    const totalPriceEl = document.getElementById("total-price");
+
+    // Default values
+    let name = "Consultation Service";
+    let price = "Price on Request";
+
+    if (plan === "ai-consultation") {
+      name = "AI Consultations";
+      price = "1,180";
+    } else if (plan === "cloud-optimization") {
+      name = "Cloud Cost Optimizations";
+      price = "4,720";
+    } else if (plan === "cybersecurity") {
+      name = "Cybersecurity & DevSecOps";
+      price = "11,800";
+    }
+
+    if (serviceNameEl) serviceNameEl.textContent = name;
+    if (servicePriceEl) servicePriceEl.textContent = price;
+    if (totalPriceEl) totalPriceEl.textContent = price;
+
+    const form = document.getElementById("checkout-form") as HTMLFormElement;
+    if (form) {
+      (window as any)._checkoutInitialized = true;
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        // Simulating submission action
+        const btn =
+          form.querySelector('button[type="submit"]') ||
+          document.querySelector('button[form="checkout-form"]');
+        if (btn) {
+          const originalText = btn.innerHTML;
+          btn.innerHTML = `<svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"><circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle><path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path></svg> Processing...`;
+
+          setTimeout(() => {
+            alert(
+              "Booking initiated successfully! A representative will contact you shortly to confirm and process the payment.",
+            );
+            btn.innerHTML = originalText;
+            form.reset();
+          }, 1500);
+        }
+      });
+    }
+  }
+</script>

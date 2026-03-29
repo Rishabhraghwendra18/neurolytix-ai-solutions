@@ -15,20 +15,19 @@ export const Navbar = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Services', href: '#services' },
+    { name: 'Services', href: 'services' },
     { name: 'Tech Stack', href: '#tech-stack' },
     { name: 'Contact', href: '#contact' }
   ];
 
   return (
-    <header 
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-[#0F172A]/80 backdrop-blur-md border-b border-white/10 shadow-lg' : 'bg-transparent'
-      }`}
+    <header
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-[#0F172A]/80 backdrop-blur-md border-b border-white/10 shadow-lg' : 'bg-transparent'
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          
+
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <a href="/" className="flex items-center gap-2 group">
@@ -54,8 +53,8 @@ export const Navbar = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center">
-            <a 
-              href="#contact" 
+            <a
+              href="#contact"
               className="bg-gradient-to-r from-[#38BDF8] to-[#818CF8] hover:opacity-90 text-white px-6 py-2.5 rounded-full font-medium text-sm transition-all duration-200 shadow-[0_0_15px_rgba(56,189,248,0.3)] hover:shadow-[0_0_25px_rgba(56,189,248,0.5)]"
             >
               Get Started
